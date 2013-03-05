@@ -1,4 +1,4 @@
-# -*- encoding: UTF-8 -*-
+# encoding: UTF-8 
 
 import sys
 import csv
@@ -33,11 +33,10 @@ for i in range (len(libro)):
 infile.close()
 
 #Para el calculo de la frecuencia, cito informalmente la ayuda de Christian Poveda, estudiante del curso
+letras = list(set(caracteres))
 
 for i in range (len(letras)):
-
-	n=0.0
-	n+=caracteres.count(letras[i])
+	n=caracteres.count(letras[i])
 	n/=len(caracteres)
 	repeticiones.append(n)
 
